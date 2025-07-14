@@ -19,31 +19,15 @@ Welcome to **Guess the Number**, the ultimate brain-vs-machine battle where the 
 🚀 How to Run
 
 1. Make sure you have Python installed.
-2. Save the script as `guess_the_number.py`.
+2. Save the script as 
 3. Run it using your terminal or command prompt:
+### ▶️ Option 1: Open Locally
+1. Download or clone this repo
+2. Open `number-guess.html` in your browser
+3. Play the game!
 
-import random
-
-def guess_the_number():
-    number_to_guess = random.randint(1, 100)
-    guess = None
-    attempts = 0
-
-    print("🎯 Welcome to Guess the Number!")
-    print("I'm thinking of a number between 1 and 100. Can you guess it?")
-
-    while guess != number_to_guess:
-        try:
-            guess = int(input("Enter your guess: "))
-            attempts += 1
-            if guess < number_to_guess:
-                print("Too low! 📉 Try again.")
-            elif guess > number_to_guess:
-                print("Too high! 📈 Try again.")
-            else:
-                print(f"🎉 You got it in {attempts} tries! The number was {number_to_guess}.")
-        except ValueError:  
-            print("🚫 Please enter a valid number!")
-
-# Start the game
-guess_the_number()
+### 🌐 Option 2: GitHub Pages
+1. Upload these files to your GitHub repository
+2. Go to **Settings > Pages**
+3. Set source to `main` branch and root (`/`)
+4. Open the URL provided by GitHub Pages — it will look like:
